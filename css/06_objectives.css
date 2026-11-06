@@ -1,0 +1,10 @@
+/* 8.13.0 — окно выбора цели регулярного чемпионата */
+.obj-desc{margin:.7rem 0 .2rem;padding:.7rem .85rem;background:var(--panel2);border:1px solid var(--line);border-radius:10px}
+.obj-desc p{margin:.2rem 0}
+.obj-tier{display:inline-block;font-size:.72rem;font-weight:800;padding:.12rem .5rem;border-radius:999px;margin-right:.35rem;text-transform:uppercase;letter-spacing:.04em}
+.obj-tier.easy{background:color-mix(in srgb,var(--green) 22%,transparent);color:var(--green)}
+.obj-tier.mid{background:color-mix(in srgb,var(--cyan) 22%,transparent);color:var(--cyan)}
+.obj-tier.hard{background:color-mix(in srgb,var(--gold) 24%,transparent);color:var(--gold)}
+.obj-tier.epic{background:color-mix(in srgb,var(--red) 22%,transparent);color:var(--red)}
+.obj-stairs{display:flex;gap:.3rem;margin-top:.6rem}.obj-stairs span{flex:1;height:8px;border-radius:5px;background:var(--line)}.obj-stairs span.on{background:var(--cyan)}
+.obj-stairs-l{display:flex;gap:.3rem;margin:.2rem 0 .5rem;font-size:.68rem;color:var(--muted)}.obj-stairs-l span{flex:1;text-align:center}
