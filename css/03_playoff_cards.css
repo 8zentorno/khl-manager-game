@@ -1,0 +1,30 @@
+/* KHL Manager Mobile Edition 7.26 — playoff series cards inspired by a compact broadcast scoreboard. */
+.series-modern-card{min-width:0;background:var(--t-bg-101c2f);border:1px solid var(--t-bd-263b55);border-radius:13px;padding:.78rem .82rem;overflow:hidden}
+.series-modern-teams{display:flex;flex-direction:column;gap:0}
+.series-modern-teamline{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.55rem;min-height:33px;padding:.27rem 0;border-bottom:1px solid var(--t-bd-24344a)}
+.series-modern-teamline:last-child{border-bottom:0}
+.series-modern-team{min-width:0;font-size:.88rem;font-weight:850;line-height:1.3;overflow-wrap:anywhere}
+.series-modern-seed{color:var(--t-fg-9aabc1);font-size:.76rem;font-weight:650;white-space:nowrap}
+.series-modern-you{display:inline-block;margin-left:.25rem;padding:.08rem .28rem;border-radius:4px;background:var(--t-bg-163d4c);color:var(--t-fg-67e8f9);font-size:.59rem;font-weight:900;letter-spacing:.03em;vertical-align:middle}
+.series-modern-dots{display:grid;grid-template-columns:repeat(7,9px);grid-template-rows:repeat(2,9px);grid-auto-flow:row;align-content:center;justify-content:end;column-gap:.23rem;row-gap:.23rem;min-width:80px}
+.series-modern-dot{display:inline-block;width:9px;height:9px;box-sizing:border-box;border-radius:50%;border:1px solid var(--t-bd-31445e);background:transparent}
+.series-modern-dot.is-green{background:var(--t-bg-35bf70);border-color:var(--t-bd-35bf70);box-shadow:0 0 5px var(--t-sh-35bf7040)}
+.series-modern-dot.is-red{background:var(--t-bg-f05a65);border-color:var(--t-bd-f05a65);box-shadow:0 0 5px var(--t-sh-f05a6540)}
+.series-modern-dot.is-empty{background:transparent;border-color:var(--t-bd-31445e);box-shadow:none}
+@media(max-width:420px){.series-modern-dots{grid-template-columns:repeat(7,8px);grid-template-rows:repeat(2,8px);column-gap:.2rem;row-gap:.2rem;min-width:70px}.series-modern-dot{width:8px;height:8px}}
+.series-modern-status{margin-top:.6rem;padding:.48rem .6rem;border:1px solid var(--t-bd-254e3a);border-radius:9px;background:var(--t-bg-0c1a28);color:var(--t-fg-a9d7c0);font-size:.73rem;line-height:1.45;overflow-wrap:anywhere}
+.series-modern-status.complete{border-color:var(--t-bd-5d4b25);color:var(--t-fg-f6d88c);background:var(--t-bg-201c18)}
+.series-modern-games{display:flex;align-items:stretch;flex-wrap:wrap;gap:.42rem;margin-top:.62rem}
+.series-modern-chip{position:relative;display:flex;flex:0 0 76px;min-width:0;min-height:57px;flex-direction:column;align-items:stretch;justify-content:center;gap:.12rem;padding:.33rem .43rem;background:var(--t-bg-14243a);border:1px solid var(--t-bd-29415c);border-radius:9px;color:var(--t-fg-e4edf8);font-variant-numeric:tabular-nums}
+.series-modern-chip.win{background:var(--t-bg-142a2a);border-color:var(--t-bd-246645);color:var(--t-fg-e4fff0)}
+.series-modern-chip.loss{background:var(--t-bg-271d2b);border-color:var(--t-bd-713540);color:var(--t-fg-fff0f2)}
+.series-modern-chip-top{display:flex;align-items:center;justify-content:space-between;gap:.3rem;color:var(--t-fg-b8c7d8);font-size:.62rem;font-weight:800;line-height:1.1}
+.series-modern-location{color:var(--t-fg-35d6ed);font-size:.62rem;font-weight:950}
+.series-modern-score{display:block;text-align:center;font-size:1rem;font-weight:950;line-height:1.25;letter-spacing:.015em;white-space:nowrap}
+.series-modern-extra{display:block;min-height:.62rem;text-align:center;color:var(--t-fg-69e2f5);font-size:.58rem;font-weight:950;line-height:1}
+.series-modern-extra-empty{opacity:0}
+.series-modern-chip.next{border-style:dashed;border-color:var(--t-bd-31465e);background:var(--t-bg-0e1a2b);color:var(--t-fg-8fa3bc)}
+.series-modern-chip.next .series-modern-chip-top{color:var(--t-fg-7f93ad)}
+.series-modern-next-date{display:block;text-align:center;font-size:.72rem;font-weight:750;line-height:1.2;white-space:normal}
+@media(max-width:560px){.series-modern-games{flex-wrap:nowrap;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;scrollbar-width:thin;padding-bottom:.25rem}.series-modern-chip{flex:0 0 70px}}
+@media(max-width:420px){.series-modern-card{padding:.7rem}.series-modern-team{font-size:.82rem}.series-modern-dot{width:8px;height:8px;flex-basis:8px}.series-modern-dots{gap:.2rem}.series-modern-chip{padding:.32rem .36rem;min-height:55px}.series-modern-games{gap:.35rem}}

@@ -1,0 +1,38 @@
+/* 8.29.0 — вкладка «Обзор» */
+.ov-stack{display:grid;gap:1.5rem}
+.ov-block{display:grid;gap:.6rem;min-width:0}
+.ov-block h2,.ov-row h3{margin:0}
+.ov-row{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-bottom:.6rem;flex-wrap:wrap}
+.ov-hero .match-hero{padding:.35rem 0}
+.ov-actions{margin-top:.9rem;flex-wrap:wrap}
+.ov-odds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin-top:.8rem}
+.ov-odds>div{border:1px solid var(--line);border-radius:10px;padding:.4rem .5rem;text-align:center;min-width:0;background:var(--t-bg-0b1728,transparent)}
+.ov-odds i{display:block;font-style:normal;font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ov-odds b{display:block;font-size:1.25rem;font-variant-numeric:tabular-nums}
+.ov-prog{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:1rem}
+.ov-prog span{display:block;height:100%;width:0;background:var(--cyan);transition:width .3s}
+.ov-prog-l{display:flex;justify-content:space-between;gap:.6rem;font-size:.78rem;color:var(--muted);margin-top:.35rem}
+.ov-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem}
+.ov-kpi{border:1px solid var(--line);border-radius:12px;padding:.65rem .8rem;min-width:0;background:var(--panel,transparent)}
+.ov-kpi small{display:block;color:var(--muted);font-size:.78rem}
+.ov-kpi b{display:block;font-size:1.6rem;line-height:1.15;font-variant-numeric:tabular-nums}
+.ov-kpi span{display:block;font-size:.76rem;color:var(--muted)}
+.ov-form{display:flex;gap:.25rem;margin:.3rem 0 .2rem}
+.ov-form i{font-style:normal;font-weight:800;font-size:.72rem;width:1.5rem;height:1.5rem;border-radius:6px;display:grid;place-items:center;border:1px dashed var(--line);color:var(--muted)}
+.ov-form i.w{background:var(--t-bg-123d30,rgba(61,220,151,.18));color:var(--green);border:0}
+.ov-form i.l{background:var(--t-bg-4a1a29,rgba(251,113,133,.18));color:var(--red);border:0}
+.ov-form i.o{background:var(--t-bg-493a13,rgba(251,191,36,.18));color:var(--gold);border:0}
+.ov-goal .objective-status{margin-top:.3rem}
+.ov-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.ov-tbl{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+.ov-tbl th,.ov-tbl td{padding:.35rem .3rem;text-align:right;border-bottom:1px solid var(--line)}
+.ov-tbl th:nth-child(-n+2),.ov-tbl td:nth-child(-n+2){text-align:left}
+.ov-tbl th:first-child,.ov-tbl td:first-child{width:1.8rem;color:var(--muted)}
+.ov-tbl th{font-size:.72rem;color:var(--muted);font-weight:600}
+.ov-tbl tr.me td{background:rgba(53,213,238,.16);font-weight:800;color:var(--text)}
+.ov-tbl tr.cut td{border-bottom:2px dashed var(--gold)}
+.ov-news{display:grid;gap:.45rem}
+.ov-news-item{padding:.45rem .6rem;border-radius:9px;border:1px solid var(--line);font-size:.88rem}
+.ov-news-item small{display:block;color:var(--muted);font-size:.72rem;margin-top:.1rem}
+@media(max-width:900px){.ov-cols{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){.ov-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.ov-stack{gap:1.5rem}}
