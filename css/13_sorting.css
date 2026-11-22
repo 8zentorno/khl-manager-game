@@ -1,0 +1,7 @@
+/* 8.28.1 — выбранный параметр сортировки подсвечен жёлтым во всех таблицах (как во «Финансах»), в тёмной и светлой теме */
+.sortable-stats-table th.sorted .stats-sort-trigger,
+.sortable-stats-table .stats-sort-trigger:hover{color:var(--t-fg-fbbf24)}
+.sortable-stats-table th.sorted .stats-sort-trigger{font-weight:800}
+.sortable-stats-table th.sorted .stats-sort-trigger span{opacity:1}
+.rt-head button[aria-sort="ascending"],.rt-head button[aria-sort="descending"],.rt-head button:hover{color:var(--t-fg-fbbf24)}
+.ar-sort button[aria-pressed="true"]{background:transparent!important;border-color:var(--t-fg-fbbf24)!important;color:var(--t-fg-fbbf24)!important}
